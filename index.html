@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-pan-card-update-form</title>
+    <style>
+      span {
+        color: red;
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      * {
+        margin: 0px 1px 0px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: rgba(238, 223, 206, 0.863)">
+      <div style="background-color: brown; color: white">
+        <h5 style="text-align: center">
+          Requested for New PAN Card Or/And Changes or Correction in PAN Data
+        </h5>
+
+        <p style="font-style: italic; text-align: center">
+          Field marked with <span>*</span>(asterick) are mandatory. To avoid
+          mistake(s),please refer guidelines and instructions
+        </p>
+      </div>
+    
+    <div style="font-weight: bold">
+      <table style="width: 100%">
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <p style="display: inline">
+              <span>*</span>Whether he is a citizen of India
+            </p>
+            <div style="display: inline">
+              <label for="yes" name="citizen" style="padding-left: 60px"
+                >Yes</label
+              >
+              <input type="radio" id="yes" />
+              <label for="no" name="citizen" style="padding-left: 20px"
+                >No</label
+              >
+              <input type="radio" id="no" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <label for="pan"><span>*</span>Permanent Account Number(PAN)</label>
+            <input type="text" name="" id="pan" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              style="margin: 3px 1px 3px 1px"
+            />
+          </td>
+          <td colspan="2"><span>*</span>1.Name</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <p style="display: inline">Title</p>
+            <div style="display: inline">
+              <label for="shrimr" name="title" style="padding-left: 60px"
+                >Shri/Mr</label
+              >
+              <input type="radio" id="shrimr" />
+              <label for="smtms" name="title" style="padding-left: 20px"
+                >Smt/Mrs.</label
+              >
+              <input type="radio" id="smtms" />
+              <label for="kumarims" name="title" style="padding-left: 20px"
+                >Kumari/Ms</label
+              >
+              <input type="radio" id="kumarims" />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div>
+  </body>
+</html>
